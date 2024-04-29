@@ -6,6 +6,7 @@ const products = require("./routers/products");
 const categories = require("./routers/categories");
 
 dotenv.config();
+
 const PORT = 3000 || process.env.PORT;
 const app = express();
 app.use(express.json());
