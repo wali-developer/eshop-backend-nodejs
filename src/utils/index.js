@@ -1,1 +1,2 @@
-export * from "./sendResponse/index";
+export * from "./sendResponse/index.js";
+export * from "./authenticateToken/index.js";

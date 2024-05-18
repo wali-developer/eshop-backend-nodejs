@@ -15,7 +15,7 @@ export const getAllCategories = async (req, res) => {
       categories,
     });
   } catch (error) {
-    res.status(404).json({
+    res.status(500).json({
       success: false,
       error: error,
     });
@@ -38,7 +38,7 @@ export const getCategory = async (req, res) => {
       category,
     });
   } catch (error) {
-    res.status(404).json({
+    res.status(500).json({
       success: false,
       error: error,
     });
