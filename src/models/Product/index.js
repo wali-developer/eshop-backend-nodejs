@@ -15,19 +15,6 @@ const productSchema = new Schema(
       type: String,
       default: "",
     },
-    image: {
-      type: String,
-      default: "",
-    },
-    images: [
-      {
-        type: String,
-      },
-    ],
-    brand: {
-      type: String,
-      default: "",
-    },
     price: {
       type: Number,
       default: 0,
@@ -54,6 +41,13 @@ const productSchema = new Schema(
     isFeatured: {
       type: Boolean,
       default: false,
+    },
+    image: {
+      type: String,
+      default: "",
+    },
+    images: {
+      type: [String],
     },
   },
   { timestamps: true }

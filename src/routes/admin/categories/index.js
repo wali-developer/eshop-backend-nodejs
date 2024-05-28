@@ -1,11 +1,11 @@
 import express from "express";
 import {
+  postCategory,
   getAllCategories,
   getCategory,
   deleteCategory,
   updateCategory,
-  postCategory,
-} from "../../controllers/index.js";
+} from "../../../controllers/admin/index.js";
 export const categoryRouter = express.Router();
 
 categoryRouter.post("/add-category", postCategory);

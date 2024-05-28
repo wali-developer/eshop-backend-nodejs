@@ -1,12 +1,12 @@
 import express from "express";
 import {
-  UpdateUser,
   createUser,
+  UpdateUser,
+  userLogin,
   deleteUser,
   getAllUsers,
   getUser,
-  userLogin,
-} from "../../controllers/users/index.js";
+} from "../../../controllers/website/index.js";
 export const userRouter = express.Router();
 
 userRouter.post("/signup", createUser);

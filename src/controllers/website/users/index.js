@@ -1,5 +1,5 @@
 import Joi from "joi";
-import { User } from "../../models/User/index.js";
+import { User } from "../../../models/User/index.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
